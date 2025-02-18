@@ -2,6 +2,10 @@
 venv/
 .venv/
 myenv/
+bin/
+include/
+lib/
+lib64/
 
 # Игнорирование файлов с окружением
 .env
