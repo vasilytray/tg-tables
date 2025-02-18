@@ -38,9 +38,7 @@ http://localhost:15672/
 Для одного из своих доменов внес А-записи на этот ip и после того, как они прописались на NS-серверах, настроил домен на доступ к RabbitMQ на порт :15672. Nginx Proxy Manager позволил мне в считанные секунды получить на домен бесплатный SSL-сертификат от Let`s
 Engrypt
 
-![Nginx Proxy Manager](/src/images/nginx_pm.jpg);
-
-
+![Nginx Proxy Manager](/src/images/nginx_pm.jpg)
 
 ---
 
@@ -54,6 +52,21 @@ pip install -r requirements.txt
 
 ---
 
+### 4. Создадим файл конфигурации
+
+Создали файл .env с содержимым (каждый со своим ): ```;-)```
+
+```
+BOT_TOKEN=bot_token
+ADMIN_IDS=[admin_id1, admin_id2]
+INIT_DB=0
+BASE_URL=https://my-domain.ru
+RABBITMQ_USERNAME=admin
+RABBITMQ_PASSWORD=new_password
+RABBITMQ_HOST=my-ip-addresses
+RABBITMQ_PORT=5672
+VHOST=my_vhost
+```
 
 ---
 
