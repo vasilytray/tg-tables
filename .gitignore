@@ -3,7 +3,8 @@ venv/
 .venv/
 myenv/
 
-bin
+#Игнорирование рабочих каталогов
+bin/
 include/
 lib/
 lib64/
