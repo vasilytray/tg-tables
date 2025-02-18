@@ -33,10 +33,10 @@ rabbitmq:3-management
 После успешного запуска контейнера веб-интерфейс RabbitMQ будет доступен по адресу:
 http://localhost:15672/
 
-Я для того, чтобы не было проблем с веб-хуками от Telegram, создал проект на виртуальной-машине с белым ip.
-Установил на ВМ Docker + Portainer + Nginx Proxy Manager. Хотя Portainer - лишний, поднял по привычке.
-Для одного из своих доменов внес А-записи на этот ip и после того, как они прописались на NS-серверах, настроил домен на доступ к RabbitMQ на порт :15672. Nginx Proxy Manager позволил мне в считанные секунды получить на домен бесплатный SSL-сертификат от Let`s
-Engrypt
+Я для того, чтобы не было проблем с веб-хуками от **Telegram**, создал проект на виртуальной машине с белым **ip**.
+Установил на ВМ **Docker + Portainer + Nginx Proxy Manager**. Хотя Portainer - лишний, поднял по привычке.
+
+Для одного из своих доменов внес А-записи на этот ip и после того, как они прописались на NS-серверах, настроил домен на доступ к **RabbitMQ** на порт :*15672*. Nginx Proxy Manager позволил мне в считанные секунды получить на домен бесплатный **SSL**-сертификат от **Let`s Engrypt**
 
 ![Nginx Proxy Manager](/src/images/nginx_pm.jpg)
 
@@ -52,9 +52,9 @@ pip install -r requirements.txt
 
 ---
 
-### 4. Создадим файл конфигурации
+### 4. Создаём файл конфигурации
 
-Создали файл .env с содержимым (каждый со своим ): ```;-)```
+Создали файл .env с основными переменными (каждый со своими ): ```;-)```
 
 ```
 BOT_TOKEN=bot_token
@@ -66,7 +66,20 @@ RABBITMQ_PASSWORD=new_password
 RABBITMQ_HOST=my-ip-addresses
 RABBITMQ_PORT=5672
 VHOST=my_vhost
+DB_HOST=base-ip-addresses
+DB_PORT=5232
+DB_NAME=firstmydb
+DB_USER=someuser
+DB_PASSWORD=verY-Secret-PasSWord
 ```
+
+Т.к. я планирую испольлзовать БД Postgres, то добавил переменные для нее.
+
+:::Tip
+Не забудьте добавить файл в ```.gitignore```
+:::
+
+---
 
 ---
 
