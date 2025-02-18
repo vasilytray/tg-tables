@@ -2,13 +2,16 @@
 venv/
 .venv/
 myenv/
-bin/
+
+bin
 include/
 lib/
 lib64/
 
 # Игнорирование файлов с окружением
 .env
+.gitignore
+pyvenv.cfg
 
 
 # Игнорирование скомпилированных файлов Python
