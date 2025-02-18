@@ -1,6 +1,8 @@
 # Телеграм-бот на вебхуках: FastAPI, Aiogram Dialog, FastStream и RabbitMQ в единой экосистеме
 Автор: [Yakovenko Oleksii](https://github.com/Yakvenalex)
 
+Исходный код: [TableHabnter](https://github.com/Yakvenalex/TableHabnter)
+
 ## 🚀 Быстрый старт
 
 ### 1. Получаем токен Telegram-бота
